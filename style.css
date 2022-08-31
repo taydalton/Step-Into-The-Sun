@@ -1,0 +1,278 @@
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin,padding, and font */
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+figure {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom Properties */
+
+.container {
+  max-width: 1200px;
+  padding: 2rem;
+
+  margin-inline: auto;
+}
+
+.even-columns {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 50em) {
+  .even-columns {
+    grid-template: 1fr / 1fr;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+position: absolute !important;
+width: 1px !important;
+height: 1px !important;
+padding: 0 !important;
+margin: -1px !important;
+overflow: hidden !important;
+clip: rect(0,0,0,0) !important;
+white-space: nowrap !important;
+border: 0 !important;
+}
+
+/* Genneral Styling */
+
+h1,
+h2,
+figcaption {
+  font-family: 'Edu QLD Beginner', cursive;
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #B38F00;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #B38F00;
+}
+
+figcaption {
+  font-size: 1.3rem;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  color: #1A1A1A;
+}
+
+p,
+li,
+button,
+.share-cap {
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  color: #1A1A1A;
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.banner {
+  background-color: #1A1A1A;
+  padding: 30px 10px 30px 10px;
+}
+
+.banner p {
+  color:#FFF;
+  font-size: 1.2rem;
+}
+
+.navbar a,
+.posts a {
+  color:#1A1A1A;
+  list-style: none;
+  text-decoration: none;
+}
+
+.button {
+  background-color:#B38F00;
+  border: 1px solid #B38F00;
+  border-radius: 10px;
+  width: 9rem;
+  display: block;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.input {
+  text-align: center;
+  width: 18.3rem;
+  display: block;
+  margin: 15px auto;
+}
+
+.footer a,
+.footer p {
+  color:#FFF;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer h2 {
+  font-size: 1.3rem;
+  color: #FFF;
+  margin-top: 20px;
+}
+
+.footer img {
+  width: 6rem;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: #1A1A1A;
+  padding: 15px 0;
+}
+
+  /* Navigation */
+
+.logo {
+  height: 5rem;
+  width: auto;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+.nav-list {
+  display: flex;
+  gap: 2rem;
+}
+
+@media (max-width: 50em) {
+  .navbar {
+    display: none;
+
+    position: absolute;
+    inset: 7.2rem 1rem auto;
+    background: #FFF;
+    box-shadow: 0 0 0.25em #000;
+  }
+
+  .navbar::after {
+    content: '';
+    position: absolute;
+    inset 0;
+  }
+
+  .nav-list {
+    display: grid;
+    gap: 0.25rem;
+    text-align: center;
+  }
+
+  .navbar[data-visible] {
+    display: block;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    padding: 0.5em;
+  }
+  
+  .mobile-nav-toggle .icon-close {
+    display: none;
+  }
+}
+
+/* Animation */
+
+.nav-list a:hover,
+.footer a:hover {
+  color: #B38F00;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #B38F00;
+  background-color: #1A1A1A; 
+  border: 1px solid #1A1A1A;
+  cursor: pointer;
+}
+
+.posts a:hover {
+  color: #B38F00;
+  cursor: pointer;
+}
