@@ -137,6 +137,11 @@ button,
   font-size: 1.7rem;
 }
 
+.share-img {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .banner {
   background-color: #1A1A1A;
   padding: 30px 10px 30px 10px;
@@ -275,4 +280,73 @@ button,
 .posts a:hover {
   color: #B38F00;
   cursor: pointer;
+}
+
+/* --------------------------------------------------------------- */
+
+/* CONTACT PAGE STYLES*/
+
+.contact-head .black {
+  color:#1A1A1A;
+}
+
+.contact-head .gold {
+  color: #B38F00;
+}
+
+.contact-form {
+  display: block;
+  align-items: center;
+}
+
+.contact-form label {
+  font-family: 'Edu QLD Beginner', cursive;
+  color: #1A1A1A;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+#name, #email {
+  width: 100%;
+  height: 40px;
+}
+
+.contact-form textarea {
+  width: 100%;
+  height: 250px;
+}
+
+/* --------------------------------------------------------------- */
+
+/* ABOUT PAGE ADDITONAL STYLING */
+
+#you-matter {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+/* --------------------------------------------------------------- */
+
+/* RESOURCE PAGE ADDITIONAL STYLING */
+
+#idontmind,
+#hotline {
+  color:#1A1A1A;
+  text-decoration: none;
+}
+
+#resource-wrap li, 
+#resource-wrap h2 {
+  text-align: left;
+}
+
+@media (max-width: 50em) {
+  #resource-wrap h2 {
+    text-align: center;
+  }
+}
+
+#resource-wrap ul {
+  padding-left: 4rem;
 }
