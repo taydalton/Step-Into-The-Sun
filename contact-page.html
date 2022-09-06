@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="./resources/logo-gold.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="primary-header">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="/index.html">
+                        <img class="logo" src="./resources/logo-black.png" alt="logo in black">
+                    </a>
+                    <button class="mobile-nav-toggle" aria-controls="navigation" aria-expanded="false">
+                        <img class="icon-open" src="./resources/menu-icon-open.png" alt="" aria-hidden="true">
+                        <img class ="icon-close" src="./resources/menu-icon-close.png" alt="" aria-hidden="true"> 
+                        <span class="visually-hidden">Menu</span>
+                    </button>
+                    <nav class="navbar" id="navigation">
+                        <ul class="nav-list" role="list">
+                            <li><a href="/about-page.html">About</a></li>
+                            <li><a href="/posts-page.html">Posts</a></li>
+                            <li><a href="/resources-page.html">Resources</a></li>
+                            <li><a href="/contact-page.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <div class="container banner">
+                    <h1>Contact</h1>
+                </div> 
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="contact-head">
+                        <h2 class="black">Interested in sharing your story? Have a question or suggestion? Wanna say hey?</h2><h2 class="gold">We'd LOVE to hear from you! Shoot us a message below :)</h2>
+                    </div>
+                    <form class="contact-form">
+                        <label for="name">Name:</label>
+                        <br>
+                        <input type="text" id="name" name="name" placeholder="Obi-Wan Kenobi">
+                        <br>
+                        <label for="email">Email:</label>
+                        <br>
+                        <input type="text" id="email" name="email" placeholder="OldBen@JediMasters.com">
+                        <br>
+                        <label for="message">Message:</label>
+                        <br>
+                        <textarea name="message" id="message" placeholder="Hello there..."></textarea>
+
+                        <button class="button">Send</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer">
+                <div>
+                    <img src="./resources/logo-gold.png" alt="logo">
+                    <h2>Copyright &copy; 2022 Step Into The Sun</h2>
+                    <p><a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a> | <a href="#">Cookies</a></p>
+                </div>
+                <div>
+                    <ul role="list" aria-label="social links">
+                        <li><a aria-label="facebook" href="#"></a></li>
+                        <li><a aria-label="instagram" href="#"></a></li>
+                        <li><a aria-label="twitter" href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+        <script type="module" src="/main.js"></script>
+    </body>
+</html>
